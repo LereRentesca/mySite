@@ -4,27 +4,20 @@ body{
     background-color: black;
     color: white;
 }
-h1,h2,h3{
+h1,h2,h3,h4{
     text-align: center;
     position: relative;
-}
-h2{
-    display: inline-block;
-    left: 50%;
-    margin: 0;
-    padding: 5px 10px;
-    border: 1px solid white;
-    font-style: italic;
-    font-size: 18px;
-    letter-spacing: 5px;
-    transform: translateX(-50%);
-    color: white;
-    text-transform: uppercase;
 }
 
 h3{
     color: #554506;
     text-shadow: 2px 2px #190974;
+}
+
+h4{
+    margin-left: 20px;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
 p{
@@ -33,7 +26,20 @@ p{
     padding-right: 20px;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.navigation{
+    text-align: center;
+}
+
 /* Utilities */
+.divider{
+    margin-left: 20px;
+}
+
 .flex-container{
     display: flex;
     flex-direction: row;
@@ -41,10 +47,23 @@ p{
 
 .vertical{
     border-left: 1px solid white;
-    height: 620px;
+    height: 700px;
     position: absolute;
     margin: 10px;
     box-shadow: 0px 0px 3px 2px #554506;
+}
+
+.btn{
+    display: block;
+    background-color: #222222;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.btn:hover{
+    background-color: #554506;
+    width: auto;
 }
 
 /* Header */
@@ -63,10 +82,13 @@ header{
     margin-right: auto;
     width: 50%;
     height: auto;
+    border: 3px solid #554506;
+    padding: 2px;
+    opacity: 0.9;
 }
 
 .personalInfo{
-    margin-left: auto;
+    margin-left: 20px;
     margin-right: auto;
     text-align: left;
 }
@@ -81,4 +103,64 @@ header{
 /* Main */
 main{
     flex-basis: 80%;
+}
+
+.greeting{
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+}
+
+.my-name{
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-top: 0;
+}
+
+.my-name span{
+    color: #554506;
+}
+
+main p{
+    line-height: 2;
+}
+
+.main-index{
+    margin-top: 180px;
+}
+
+.card-school{
+    background-color: #222222;
+    border-radius: 15px 30px;
+    margin: 1px 1px 1px 20px;
+}
+
+.year{
+    padding-top: 10px;
+    margin-bottom: 0;
+    color: #554506;
+}
+
+.year span{
+    color: white;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.school-name{
+    font-weight: bold;
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 0;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.school-description{
+    margin-top: 0;
+    font-size: 12px;
+    padding-bottom: 10px;
 }
